@@ -1,5 +1,6 @@
 import Tabulator from 'tabulator-tables';
-
+import source_yaml  from '../assets/sample.yml';
+console.log(source_yaml);
 var tabledata = [
     {id:1, name:"Oli Bob", progress:12, gender:"male", rating:1, col:"red", dob:"19/02/1984", car:1},
     {id:2, name:"Mary May", progress:1, gender:"female", rating:2, col:"blue", dob:"14/05/1982", car:true},

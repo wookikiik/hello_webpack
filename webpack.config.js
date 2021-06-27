@@ -4,7 +4,7 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: ['./src/js/index.js', './src/css/index.css'],
+    entry: ['./src/js/index.js', './src/css/index.css', './src/assets/sample.yml'],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/bundle.js'
@@ -13,9 +13,7 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                include: [
-                    path.resolve(__dirname, 'src/js')
-                ],
+                include: path.resolve(__dirname, 'src/js'),
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
@@ -26,11 +24,15 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                include: [
-                    path.resolve(__dirname, 'src/css')
-                ],
+                include: path.resolve(__dirname, 'src/css'),
                 exclude: /node_modules/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader'],
+            },
+            {
+                test: /\.yml$/,
+                include: path.resolve(__dirname, 'src/assets'),
+                type: 'json',
+                use:'yaml-loader'
             },
         ]
     },

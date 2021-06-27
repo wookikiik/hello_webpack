@@ -1,0 +1,25 @@
+{
+  "name": "hello_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.7",
+    "@babel/core":"^7.14.6",
+    "babel-loader": "^8.2.2",
+    "tabulator-tables": "^4.9.3",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2",
+    "css-loader": "^5.2.6",
+    "mini-css-extract-plugin": "^1.6.1",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "html-webpack-plugin": "^5.3.2",
+    "lodash": "^4.17.21"
+  }
+}

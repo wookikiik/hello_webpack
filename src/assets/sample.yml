@@ -1,0 +1,24 @@
+# APT
+complex:
+  complexName: 순화더샵
+  totalHouseHoldCount: 19,
+  totalDongCount: 1,
+  useApproveYmd: 20040701,
+  area:
+    min: 46.29
+    max: 110.51
+
+# Details
+article:
+  articleName: 센트레빌아스테리움서울
+  buildingName: C동
+  tradeTypeCode: A1
+  tradeTypeName: 매매
+  dealOrWarrantPrc: 41억
+  spec:
+    area1: 304
+    area2: 244
+    floorInfo: 35/35
+    direction: 남향
+
+
